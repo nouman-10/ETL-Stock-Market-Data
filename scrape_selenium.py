@@ -20,6 +20,8 @@ for link in nav_links:
 if stocks_link is not None:
     stocks_link.click()
 
+time.sleep(5)
+
 # Get stock links
 tbody = driver.find_element(By.XPATH, '//tbody[contains(@class, "datatable")]')
 rows = tbody.find_elements(By.TAG_NAME, "tr")
